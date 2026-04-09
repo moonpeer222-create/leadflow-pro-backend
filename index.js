@@ -140,3 +140,7 @@ app.get('/api/billing/plans', (req, res) => res.json({
 }));
 
 app.listen(PORT, () => console.log(`🚀 LeadFlow Pro API running on port ${PORT}`));
+app.listen(process.env.PORT || 10000, () => {
+  console.log('Server running');
+});
+
